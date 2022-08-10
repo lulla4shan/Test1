@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="group1"/>
+        <include name="functional"/>
+        <include name="create"/>
+        <include name="search"/>
+        <include name="edit"/>
+        <include name="delete"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="executeClass.ExecuteManageOrderPage">
+        <methods>
+          <include name="vrifyTheAdminCanViewTheOrderDetailsOfSearchOrder"/>
+          <include name="verifyTheAdminCanSearchAnOrderByUsingOrderId"/>
+        </methods>
+      </class> <!-- executeClass.ExecuteManageOrderPage -->
+      <class name="executeClass.ExecuteManageExpensePage">
+        <methods>
+          <include name="verifyAdminCanSearchNewlyCreatedOne"/>
+          <include name="verifyExpenseCategoryIsVisibleWhileClickingOnExpenseCategoryUnderManageExpense"/>
+          <include name="verifyAdminCanCreateANewExpenseCategory"/>
+          <include name="verifyAdminCanDeleteTheCreatedOne"/>
+          <include name="verifyAdminCanEditTheCreatedOnes"/>
+        </methods>
+      </class> <!-- executeClass.ExecuteManageExpensePage -->
+      <class name="executeClass.ExecuteManageProductPage">
+        <methods>
+          <include name="verifyTheUserCanDeleteTheCreatedProductOrNot"/>
+          <include name="verifyListOfProductPageIsDisplayedWhileClickingOnManageProduct"/>
+          <include name="verifyUserCanSearchAProductByUsingProductCode"/>
+          <include name="verifyTheReSetButtonIsWorkingFineOrNot"/>
+          <include name="verifyTheUserCanNavigateToTheLastPageByClickingOnLastButton"/>
+          <include name="verifyUserCanAddNewProductOrNot"/>
+        </methods>
+      </class> <!-- executeClass.ExecuteManageProductPage -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
